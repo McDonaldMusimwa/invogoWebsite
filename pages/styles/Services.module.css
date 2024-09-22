@@ -1,0 +1,42 @@
+/* Services.module.css */
+
+.ServicesContainer {
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .lineContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .line {
+    flex: 1;
+    height: 1px;
+    background-color: #000; /* Black color for the line */
+  }
+  
+  .ServicesText {
+    padding: 0 10px; /* Space between the text and the lines */
+    text-align: center;
+    white-space: nowrap;
+    font-size: 2.2em; /* Adjust as needed */
+    color: #333; /* Adjust color as needed */
+  }
+  
+  .ServicesTextCustom {
+    font-weight: bold;
+    color: #007BFF; /* Example of custom color for "Our Services" */
+  }
+  .ServiceGrid{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    padding: 5px;
+    align-content: center;
+  }
+  

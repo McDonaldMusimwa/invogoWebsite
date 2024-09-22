@@ -9,8 +9,8 @@ function NavBar() {
     }
     return <nav>
         <ul className={styles.navList}>
-            <li><Link to={'home'} >Home</Link></li>
-            <li><Link to={'/services'}>Services</Link></li>
+            <li><Link to={'/'} >Home</Link></li>
+            <li><Link to={'services'}>Services</Link></li>
             <li><Link to={'gallery'}>Gallery</Link></li>
             <li><Link to={'company'}>Company</Link></li>
             <ButtonCustom onClick={navigateToContactPageHandler}>Contact Us</ButtonCustom>

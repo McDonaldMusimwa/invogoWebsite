@@ -1,5 +1,6 @@
+import React from 'react';
 import ButtonCustom from '../components/ButtonCustom'
-import styles from './Home.module.css'
+import styles from './styles/Home.module.css'
 import mobileappPic from '../public/images/invogo.jpg';
 import bannar from '../data/data';
 import BannerItem from '../components/Home/BannerItem';
