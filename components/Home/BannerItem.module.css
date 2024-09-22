@@ -1,0 +1,27 @@
+.BannerContainer{
+display: flex;
+flex-direction: row;
+text-align: left;
+justify-content: center;
+width: 300px;
+padding: 10px;
+background-color: transparent;
+font-size: 1rem;
+margin-top: 1.5rem;
+}
+.BannerContainer span{
+    margin: 1px;
+}
+.image{
+border-radius: 8px;
+border: 1px solid var(--bluelight1);
+background-color: transparent;
+object-fit: fill;
+padding: 10px;
+}
+.text{
+background-color: transparent;
+font-size: 12px;
+color: var(--white);
+width: 50%;
+}

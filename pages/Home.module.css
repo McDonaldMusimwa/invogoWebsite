@@ -1,0 +1,80 @@
+.HomeContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2%;
+    padding: 10px;
+    margin: 0 1rem;
+    
+}
+
+.HeroLargeText {
+    font-size: 250%;
+    padding: .8%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.HeroLargeTextCustom {
+    color: var(--bluelight2);
+}
+.HeroTopText{
+    background-color: var(--bluelight3);
+    color: var(--black);
+    border-radius: 4px;
+    position: absolute;
+    top: 13%;
+    padding: 4px;
+}
+.CustomButton {
+    width: 20%;
+    padding: 10px;
+    height: 10%;
+}
+
+.marketing {
+    position: absolute;
+    background: var(--bluedark);
+    color: var(--white);
+    border-radius: 10px;
+    padding: .5rem;
+    font-size: 100%;
+    text-align: center;
+    bottom: 20%;
+    right: 10%;
+    width: 70px;
+
+}
+
+.marketing2 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background: var(--white);
+    color: var(--black);
+    border-radius: 10px;
+    padding: .4rem;
+    font-size: 80%;
+    text-align: center;
+    top: 25%;
+    right: 35%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   width: 100px;
+
+
+}
+.marketing2>img{
+    width: 30%;
+    height: 40%;
+}
+
+.HomeBottomBanner{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bluedark);
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
