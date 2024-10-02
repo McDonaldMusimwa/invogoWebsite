@@ -1,0 +1,33 @@
+.footerContainer {
+  background: var(--bluedark);
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+.detailsContainer {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.detailsContainer > div {
+  text-align: center;
+}
+.detailsContainerTermsContainer > span {
+  justify-content: center;
+}
+.footerServices ul li {
+  list-style: none;
+  text-align: center;
+}
+.contactUs span{
+  display: block;
+}
+.location span{
+  display: block;
+
+}
+.termsContainer{
+  text-align: center;
+}

@@ -1,21 +1,43 @@
-import styles from './NavBar.module.css'
-import ButtonCustom from '../ButtonCustom'
-import { Link } from 'react-router-dom'
-
+import styles from "./NavBar.module.css";
+import ButtonCustom from "../ButtonCustom";
+import { Link } from "react-scroll";
+import logo from "../../public/images/favconbg.png";
 
 function NavBar() {
-    const navigateToContactPageHandler=()=>{
-        console.log('navigate to contact page')
-    }
-    return <nav>
-        <ul className={styles.navList}>
-            <li><Link to={'/'} >Home</Link></li>
-            <li><Link to={'services'}>Services</Link></li>
-            <li><Link to={'gallery'}>Gallery</Link></li>
-            <li><Link to={'company'}>Company</Link></li>
-            <ButtonCustom onClick={navigateToContactPageHandler}>Contact Us</ButtonCustom>
-        </ul>
+  const navigateToContactPageHandler = () => {
+    console.log("navigate to contact page");
+  };
+  return (
+    <nav>
+      <div className={styles.LogoContainer}>
+        <img src={logo} width={80} height={50} alt="logo" />
+        InvoGo
+      </div>
+      <ul className={styles.navList}>
+        <li>
+          <a href="#home">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#services">
+            Services
+          </a>
+        </li>
+        <li>
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+          <a href="#aboutus">
+            About
+          </a>
+        </li>
+        <ButtonCustom onClick={navigateToContactPageHandler}>
+          Contact Us
+        </ButtonCustom>
+      </ul>
     </nav>
+  );
 }
 
-export default NavBar
+export default NavBar;

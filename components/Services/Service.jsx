@@ -1,26 +1,24 @@
 import React, { useState } from "react";
 import styles from "./Service.module.css";
 
-interface ServiceProps {
-  toggleHandler: () => void;
-  image: string;
-  text: string;
-  title: string;
-  id: string; // Use `id` instead of `key`
-  amountOfWords?: number; // Made optional with default value
-}
-
-function Service({ image, text, title, id, amountOfWords = 20,toggleHandler }: ServiceProps) {
+function Service({
+  image,
+  text,
+  title,
+  id,
+  amountOfWords = 20,
+  toggleHandler,
+}) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const splittedText = text.split(" ");
-  const itCanOverflow = splittedText.length > amountOfWords;
+  const splittedText = text?.split(" ");
+  const itCanOverflow = splittedText?.length > amountOfWords;
   const beginText = itCanOverflow
     ? splittedText.slice(0, amountOfWords - 1).join(" ")
     : text;
-  const endText = splittedText.slice(amountOfWords - 1).join(" ");
+  const endText = splittedText?.slice(amountOfWords - 1).join(" ");
 
-  const handleKeyboard = (e: React.KeyboardEvent) => {
+  const handleKeyboard = (e) => {
     if (e.code === "Space" || e.code === "Enter") {
       setIsExpanded(!isExpanded);
     }

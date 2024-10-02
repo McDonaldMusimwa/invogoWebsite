@@ -3,7 +3,8 @@
     grid-template-columns: 50% 50%;
     gap: 2%;
     padding: 10px;
-    margin: 0 1rem;
+    margin: 2rem 1rem;
+    position: relative;
     
 }
 
@@ -22,13 +23,15 @@
     color: var(--black);
     border-radius: 4px;
     position: absolute;
-    top: 13%;
+    top: 17%;
     padding: 4px;
 }
 .CustomButton {
-    width: 20%;
-    padding: 10px;
-    height: 10%;
+    width: 30%;
+  justify-content: center;
+    align-content: center;
+    
+    
 }
 
 .marketing {
@@ -40,9 +43,14 @@
     font-size: 100%;
     text-align: center;
     bottom: 20%;
-    right: 10%;
+    right: 17%;
     width: 70px;
-
+    animation: marketingfloating 3s ease-in-out infinite
+}
+@keyframes marketingfloating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
 }
 
 .marketing2 {

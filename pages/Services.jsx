@@ -7,7 +7,7 @@ const Services = () => {
     setIsExpanded(!isExpanded)
   }
   return (
-    <div className={styles.ServicesContainer}>
+    <div id="services" className={styles.ServicesContainer}>
       <div className={styles.lineContainer}>
         <div className={styles.line}></div>
         <h2 className={styles.ServicesText}>
