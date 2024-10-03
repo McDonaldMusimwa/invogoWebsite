@@ -13,6 +13,7 @@ function Home() {
           <span className={styles.HeroTopText}>
             SOLUTION BEYOND EXPECTATION
           </span>
+          <span className={styles.ConstructionBanner}><h3 className={styles.blink}>This website is under construction</h3></span>
           <span className={styles.HeroLargeText}>
             Innovative{" "}
             <span className={styles.HeroLargeTextCustom}>

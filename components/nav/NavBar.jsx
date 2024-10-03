@@ -11,7 +11,7 @@ function NavBar() {
     <nav>
       <div className={styles.LogoContainer}>
         <img src={logo} width={80} height={50} alt="logo" />
-        InvoGo
+       <h1>InvoGo</h1>
       </div>
       <ul className={styles.navList}>
         <li>
@@ -25,7 +25,7 @@ function NavBar() {
           </a>
         </li>
         <li>
-          <a href="#gallery">Gallery</a>
+          <a href="#mobileapp">Mobile App</a>
         </li>
         <li>
           <a href="#aboutus">
