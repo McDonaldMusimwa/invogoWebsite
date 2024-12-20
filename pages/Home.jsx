@@ -10,10 +10,11 @@ function Home() {
     <div  id="home" style={{marginTop:'100px'}}>
       <div className={styles.HomeContainer}>
         <div>
+           {/* 
           <span className={styles.HeroTopText}>
             SOLUTION BEYOND EXPECTATION
-          </span>
-          <span className={styles.ConstructionBanner}><h3 className={styles.blink}>This website is under construction</h3></span>
+          </span>*/}
+        <span className={styles.ConstructionBanner}><h3 className={styles.blink}>This website is under construction</h3></span>
           <span className={styles.HeroLargeText}>
             Innovative{" "}
             <span className={styles.HeroLargeTextCustom}>

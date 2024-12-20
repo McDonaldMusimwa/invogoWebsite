@@ -10,7 +10,7 @@ function Main() {
     <div className={styles.mainSection}>
       <Home />
       <Services />
-      <hr></hr>
+  
       <MobileApp />
       <AboutUs />
    

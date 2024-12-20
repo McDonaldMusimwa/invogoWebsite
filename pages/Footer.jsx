@@ -9,7 +9,8 @@ function Footer() {
           <h4>Contact Us</h4>
           <span>Phone: +27 67 103 3055</span>
           <span>Email: mcddev.tech</span>
-          <span>Website:<a href="https://mcdonald.onrender.com">Visit</a></span>
+          <span>Website: <a href="https://mcdonald.onrender.com">Visit</a></span>
+          <span>Source Code: <a href="https://github.com/McDonaldMusimwa/InvoiceToGo.git">GitHub</a></span>
         </div>
         <div className={styles.footerServices}>
           <h4>Services</h4>

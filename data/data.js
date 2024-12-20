@@ -42,12 +42,15 @@ export const services = [
     message:
       "A key feature of InvoGo is the ability to easily share invoices with clients through the Share button. You can quickly send invoices via email, WhatsApp, or even share them on social media, making communication and payment processing more convenient than ever.",
   },
-  {
+ 
+];
+export default bannar;
+/*
+ {
     key:4,
     title:"book keeping",
     image: bookkeeping,
     message:
       "InvoGo makes bookkeeping and tracking your profitability effortless, eliminating the need to hire an accountant. With our intuitive platform, you can manage your finances seamlessly and ensure your business stays on the right track. Our system allows you to easily monitor income and expenses, giving you clear insights into your financial health. Say goodbye to the complexities of accounting and let InvoGo handle the heavy lifting, so you can focus on growing your business. With InvoGo, staying profitable has never been simpler or more accessible.",
   },
-];
-export default bannar;
+  */

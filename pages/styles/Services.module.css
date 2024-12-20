@@ -1,17 +1,18 @@
 /* Services.module.css */
 
 .ServicesContainer {
-    
+    height: 100%;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin:7rem 0 20px 0;
+    margin:2rem 0 2rem 0;
   }
   
   .lineContainer {
     display: flex;
     align-items: center;
     width: 100%;
+    margin: 4rem 0;
   }
   
   .line {
@@ -38,5 +39,6 @@
     gap: 5%;
     padding: 5px;
     align-content: center;
+    margin: 0 0 2rem 0;
   }
   

@@ -1,30 +1,28 @@
-.BannerContainer{
-display: flex;
+.BannerContainer {
+  display: flex;
 
-flex-direction: row;
+  flex-direction: row;
 
-justify-content: center;
-gap: 5px;
-padding: 5px;
-background-color: transparent;
-font-size: 1rem;
-
+  justify-content: center;
+  gap: 5px;
+  padding: 15px;
+  background-color: transparent;
+  font-size: 1rem;
 }
-.BannerContainer span{
-    margin: 1px;
+.BannerContainer span {
+  margin: 1px;
 }
-.image{
-border-radius: 8px;
-border: 1px solid var(--bluelight1);
-background-color: transparent;
-object-fit: fill;
-padding: 10px;
-
+.image {
+  border-radius: 8px;
+  border: 1px solid var(--bluelight1);
+  background-color: transparent;
+  object-fit: fill;
+  padding: 15px;
 }
-.text{
-background-color: transparent;
-font-size: 12px;
-color: var(--white);
-width: 50%;
-margin-left: 5px;
+.text {
+  background-color: transparent;
+  font-size: 15px;
+  color: var(--white);
+  width: 50%;
+  margin-left: 5px;
 }

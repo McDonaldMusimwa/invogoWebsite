@@ -3,9 +3,6 @@ import styles from "./styles/Services.module.css";
 import { services } from "../data/data";
 import Service from "../components/Services/Service";
 const Services = () => {
-  const toggleExpandHandler=()=>{
-    setIsExpanded(!isExpanded)
-  }
   return (
     <div id="services" className={styles.ServicesContainer}>
       <div className={styles.lineContainer}>
@@ -17,19 +14,18 @@ const Services = () => {
         <div className={styles.line}></div>
       </div>
       <div className={styles.ServiceGrid}>
-      {services.map((service) => {
-        return (
-          <Service
-            title={service.title}
-            image={service.image}
-            text={service.message}
-            key={service.key}
-            id={service.key.toString()}
-            toggleHandler={toggleExpandHandler}
-          />
-        );
-      })}
-    </div>
+        {services.map((service) => {
+          return (
+            <Service
+              title={service.title}
+              image={service.image}
+              text={service.message}
+              key={service.key}
+              id={service.key.toString()}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
