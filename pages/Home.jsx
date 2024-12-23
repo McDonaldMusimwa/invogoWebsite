@@ -18,7 +18,7 @@ function Home() {
           <span className={styles.HeroLargeText}>
             Innovative{" "}
             <span className={styles.HeroLargeTextCustom}>
-              Mobile App Deveped
+              Mobile App Developed
             </span>{" "}
             by Small Business for Small Business
           </span>

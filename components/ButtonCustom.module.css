@@ -11,15 +11,15 @@
     color: var(--white);
     background-color: var(--bluelight3);
     cursor: pointer;
-    animation: zoom-in-zoom-out 1s ease infinite;
+    animation: zoom-in-zoom-out 4s ease infinite;
    }
 
    @keyframes zoom-in-zoom-out {
     0% {
-      transform: scale(1, 1);
+      transform: scale(1);
     }
  
     100% {
-      transform: scale(1.1, 1.1);
+      transform: scale(1.1);
     }
   }

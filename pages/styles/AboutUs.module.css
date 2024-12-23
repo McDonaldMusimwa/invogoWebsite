@@ -1,7 +1,51 @@
-.AboutUs{
-
+.container {
+    margin: 1rem 0;
 }
 
-h3{
-    text-align: center;
+h3 {
+  text-align: center;
+}
+
+.AboutUs {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 4%;
+  padding: 10px;
+  font-family: "Montserrat", serif;
+  line-height: 1.6;
+  max-width: 80%;
+  margin: 0 auto;
+  color: #333;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.description {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.list {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #777;
 }

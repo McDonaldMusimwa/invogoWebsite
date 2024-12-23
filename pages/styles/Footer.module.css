@@ -27,6 +27,10 @@
 .contactUs span{
   display: block;
 }
+
+.contactUs span a{
+  color: white;
+}
 .location span{
   display: block;
 
