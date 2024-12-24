@@ -1,125 +1,163 @@
-.HomeContainer {
-    display: grid;
-    grid-template-columns: 59% 35%;
-    gap: 2%;
-    padding: 10px;
-    margin: 2rem 1rem;
+.home {
+  background: rgba(148, 187, 233,0.12);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -9;
+  position: fixed; /* Keep it fixed in place */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Cover the entire viewport width */
+  height: 100vh;
+}
 
-   
-    
+.HomeWrapper {
+  margin-top: 5rem;
+}
+
+.HomeContainer {
+  display: grid;
+  grid-template-columns: 60% 35%;
+  gap: 2%;
+  padding: 5px;
+  margin: 2rem 1rem;
+}
+
+.TextContainer {
+  text-align: left;
 }
 
 .HeroLargeText {
-    font-size: 250%;
-    padding: .8%;
-    text-align: center;
-    font-weight: bolder;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin: 1rem 0;
 }
 
 .HeroLargeTextCustom {
-    color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color:var(--bluelight2);
-    /*color: transparent;*/
-    
+  color: var(--bluelight2);
+  -webkit-text-stroke: 2px var(--bluelight2);
+  
 }
-.HeroTopText{
-    background-color: var(--bluelight3);
-    color: var(--black);
-    border-radius: 4px;
-    position: absolute;
-    top: 17%;
-    padding: 4px;
+
+.Description {
+  margin: 1rem 0;
+  line-height: 1.6;
 }
+
 .CustomButton {
-    width: 30%;
+  width: 30%;
+  display: flex;
   justify-content: center;
-    align-content: center;
-    
-    
+}
+
+.ImageContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+
+.AppImage {
+  width: 400px;
+  height: auto;
+  margin-top: 10px;
 }
 
 .marketing {
+  position: absolute;
+  background: var(--bluedark);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  bottom: 20%;
+  right: 17%;
+  width: 70px;
+  animation: marketingfloating 3s ease-in-out infinite;
+}
+/*
+.marketing2{
     position: absolute;
     background: var(--bluedark);
     color: var(--white);
     border-radius: 10px;
-    padding: .5rem;
-    font-size: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
     text-align: center;
     bottom: 20%;
     right: 17%;
     width: 70px;
-    animation: marketingfloating 3s ease-in-out infinite
+    animation: marketingfloating 3s ease-in-out infinite;
 }
-@keyframes marketingfloating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }    
-}
+*/
 
 .marketing2 {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    background: var(--white);
-    color: var(--black);
-    border-radius: 10px;
-    padding: .4rem;
-    font-size: 80%;
-    text-align: center;
-    top: 25%;
-    right: 35%;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-   width: 100px;
-
-
-}
-.marketing2>img{
-    width: 30%;
-    height: 40%;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: var(--black);
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  position: absolute;
+  
+  right: 75%;
+  text-align: center;
+  width: 100px;
+  z-index: 10;
 }
 
-.HomeBottomBanner{
-    display: flex;
-    flex-direction: row;
-    background-color: var(--bluedark);
-    width: 100%;
-    height: 40%;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-evenly;
+.marketing2 img {
+  width: 30%;
+  height: 40%;
+  margin-right: 5px;
 }
 
-/*  CONSTRUCTION BANNER */
-.ConstructionBanner{
-    font-size: 30PX;
-    color:red;
-    height: 50px;
-    width: 50%;
-
-   
-}
-.ConstructionBanner>h3{
-    background-color: yellow;
-    border-radius: 10px;
+.HomeBottomBanner {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--bluedark);
+  padding: 1rem;
+  justify-content: center;
 }
 
+.ConstructionBanner {
+  font-size: 1.5rem;
+  color: red;
+  text-align: center;
+}
 
-@-webkit-keyframes blinker {
-    from {opacity: 1.0;}
-    to {opacity: 0.0;}
+.ConstructionBanner h3 {
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.blink {
+  animation: blinker 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes marketingfloating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 15px);
+    }
+    100% {
+      transform: translate(0, 0px);
+    }
   }
-  .blink{
-      text-decoration: blink;
-      -webkit-animation-name: blinker;
-      -webkit-animation-duration: 1.50s;
-      -webkit-animation-iteration-count:infinite;
-      -webkit-animation-timing-function:ease-in-out;
-      -webkit-animation-direction: alternate;
+  
+
+@keyframes blinker {
+  from {
+    opacity: 1;
   }
-
-
-
+  to {
+    opacity: 0;
+  }
+}

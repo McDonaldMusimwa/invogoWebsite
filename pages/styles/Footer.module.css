@@ -38,3 +38,10 @@
 .termsContainer{
   text-align: center;
 }
+.line{
+  width: 50%;
+  height: 1px;
+  background-color: var(--white);
+ margin: 0 50%;
+  
+}

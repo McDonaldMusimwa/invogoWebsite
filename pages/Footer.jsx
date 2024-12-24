@@ -26,7 +26,7 @@ function Footer() {
           <span>Surrey Estate Capetown</span>
         </div>
       </div>
-      <hr></hr>
+      <div className={styles.line}></div>
       <div className={styles.termsContainer}>
         <span style={{textAlign:'center'}}>
           &#169;<Link to={"termsandcondition"}>InvoGo</Link> All rights reserved

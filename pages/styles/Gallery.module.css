@@ -21,7 +21,8 @@
   width: 10rem;
 }
 .gallery {
-  margin-top: 5%;
+  margin:5rem 0;
+  scroll-margin-top: 5rem;
   gap: 5%;
 }
 
@@ -61,5 +62,6 @@
 .directiveHeading{
     text-align: center;
     justify-content: center;
+  
 }
 

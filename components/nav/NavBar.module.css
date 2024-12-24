@@ -3,13 +3,14 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
+position: fixed;
   top: 0;
   left: 0;
   height: 5rem;
   width: 100%;
   z-index: 100;
   background-color: var(--white);
+  padding-bottom: .5rem;
 }
 .navList {
   display: flex;

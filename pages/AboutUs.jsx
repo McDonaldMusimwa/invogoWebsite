@@ -52,10 +52,7 @@ function AboutUs() {
         </p>
       </div>
       </div>
-      <p className={styles.footer}>
-        <strong>Built with ❤️ as a final school project.</strong> Thank you for
-        supporting Invogo. Your success is our motivation!
-      </p>
+      
     </div>
   );
 }
