@@ -26,3 +26,15 @@
   width: 50%;
   margin-left: 5px;
 }
+@media (max-width: 768px) {
+  .BannerContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .text {
+    width: 100%;
+    margin: 0;
+  } 
+  
+}

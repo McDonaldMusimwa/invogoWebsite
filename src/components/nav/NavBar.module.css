@@ -1,0 +1,149 @@
+/* Base Navbar */
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  z-index: 1000;
+
+  background-color: var(--white);
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+  padding: 0 1rem;
+}
+.logo{
+  width:3rem; 
+  height:rem;
+}
+.LogoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.LogoContainer a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 0.5rem;
+}
+
+.LogoContainer h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Desktop nav */
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navList li {
+  list-style: none;
+}
+
+.navList a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navList a:hover {
+  color: #007bff;
+}
+
+/* Hamburger Button */
+.hamburgerBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  max-width: 300px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobileMenu.open {
+  right: 0;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  align-self: flex-end;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Mobile Nav List */
+.navListMobile {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+.navListMobile a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.navListMobile a:hover {
+  color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.LogoContainer {
+  display: flex;
+  align-items: center; /* vertically center logo and button */
+  justify-content: space-between; /* push children to edges */
+  width: 100%; /* make sure it spans full width */
+  padding: 0 1rem; /* optional: add some horizontal padding */
+}
+
+.navbarContainer{
+  height: 5rem;
+}
+
+}

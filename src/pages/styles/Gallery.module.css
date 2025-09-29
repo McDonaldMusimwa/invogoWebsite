@@ -1,0 +1,140 @@
+.Imagescontainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  justify-content: center;
+  border-radius: 50%;
+  border: 6px solid var(--bluelight2);
+  background-image: var( --bluelineargradient);
+  width: fit-content;
+
+}
+
+.image {
+  background-color: var(--caloryCard);
+  border-radius: 0.5rem;
+  box-shadow: 1rem gray;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  width: 10rem;
+}
+
+.gallery {
+  margin: 5rem 0;
+  scroll-margin-top: 5rem;
+  gap: 5%;
+}
+
+.image:nth-child(2) {
+  background: var(--planCard);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+.ServicesText {
+  padding: 0 10px; /* Space between the text and the lines */
+  text-align: center;
+  white-space: nowrap;
+  font-size: 2.2em; /* Adjust as needed */
+  color: #333; /* Adjust color as needed */
+}
+
+.ServicesTextCustom {
+  font-weight: bold;
+  color: #007bff; /* Example of custom color for "Our Services" */
+}
+
+.lineContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #000; /* Black color for the line */
+}
+
+.GallerySection {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 4%;
+  padding: 2%;
+}
+
+.directiveHeading {
+  text-align: center;
+  justify-content: center;
+}
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.description {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.list {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #777;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .GallerySection {
+    grid-template-columns: 1fr; /* Collapse to single column */
+    gap: 1.5rem;
+  }
+
+  .Imagescontainer {
+    flex-direction: column; /* Stack images vertically */
+    border: none; /* Remove border ring for mobile */
+    gap: 1rem;
+  }
+
+  .image {
+    width: 100%; /* Full width on small screens */
+    max-width: 18rem; /* Prevent oversized images */
+    margin: 0 auto; /* Center align */
+
+  }
+
+  .ServicesText {
+    font-size: .8em; /* Scale down text */
+  }
+
+  .title {
+    font-size: 1.6rem; /* Scale down slightly */
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .description,
+  .list {
+    font-size: 0.95rem; /* Make body text more compact */
+  }
+
+  .footer {
+    font-size: 0.85rem;
+  }
+ 
+}

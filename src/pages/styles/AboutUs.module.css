@@ -1,0 +1,101 @@
+.container {
+  margin: 1rem 0;
+  scroll-margin-top: 5rem;
+}
+
+h3 {
+  text-align: center;
+}
+.mission{
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+margin: 1rem auto;
+   max-width: 600px; /* Keep text from stretching too wide */
+  margin-top: 1.5rem; /* Space from the title */
+}
+.AboutUs {
+
+  gap: 4%;
+  padding: 10px;
+  font-family: "Montserrat", serif;
+  line-height: 1.6;
+  max-width: 100%;
+
+  color: #333;
+}
+.aboutContent {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 4%;
+  
+  justify-content: center;
+  padding: 0% .5rem;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.description {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.list {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #777;
+}
+.aboutImage{
+  border-radius: 6px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .AboutUs {
+    grid-template-columns: 1fr; /* Collapse to single column */
+    gap: 1.5rem;
+    max-width: 95%; /* Use more width on small screens */
+    padding: 1rem;
+  }
+.aboutContent {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+  .title {
+    font-size: 1.6rem; /* Scale down slightly */
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .description,
+  .list {
+    font-size: 0.95rem; /* Make body text more compact */
+  }
+
+  .footer {
+    font-size: 0.85rem;
+  }
+}

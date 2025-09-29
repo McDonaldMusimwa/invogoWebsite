@@ -1,0 +1,87 @@
+.footerContainer {
+  background: var(--bluedark);
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  padding: .5rem;
+  border-radius: 50px 0px 0px 0px;
+}
+
+.detailsContainer {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+}
+
+.detailsContainer > div {
+  text-align: center;
+}
+
+.detailsContainerTermsContainer > span {
+  justify-content: center;
+}
+
+.footerServices ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.contactUs span {
+  display: block;
+}
+
+.contactUs span a {
+  color: white;
+}
+
+.location span {
+  display: block;
+}
+
+.termsContainer {
+  text-align: center;
+}
+
+.line {
+  width: 50%;
+  height: 1px;
+  background-color: var(--white);
+  margin: 1rem auto;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .detailsContainer {
+    grid-template-columns: 1fr; /* Stack into one column */
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .footerContainer {
+    border-radius: 20px 20px 0 0; /* Softer corners for mobile */
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .footerServices ul li {
+    margin: 0.5rem 0; /* Add breathing space */
+  }
+
+  .line {
+    width: 80%; /* Make divider more visible on small screens */
+    margin: 1rem auto;
+  }
+
+  .contactUs span,
+  .location span {
+    font-size: 0.95rem; /* Slightly smaller for mobile */
+  }
+
+  .termsContainer {
+    font-size: 0.85rem;
+    margin-top: 1rem;
+  }
+}

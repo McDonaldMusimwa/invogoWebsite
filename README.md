@@ -1,6 +1,6 @@
 # InvogoToGo Website 
 
-This repository serves as the showcase and landing page for a mobile application built using React Native. The mobile app, InvogoToGo, is not currently live due to financial constraints, but those interested in exploring the codebase can access it here: [InvoToGo Code Base](https://github.com/McDonaldMusimwa/InvoiceToGo.git)
+This repository is landing page for a mobile application built using React Native. The mobile app is called InvogoToGo, is not currently live due to financial constraints, but those interested in exploring the codebase can access it here: [InvoToGo Code Base](https://github.com/McDonaldMusimwa/InvoiceToGo.git)
 
 To have access to the application close the repository to your local computer.
 

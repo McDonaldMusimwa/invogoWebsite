@@ -1,7 +1,7 @@
-import bookkeeping from "../public/images/bookkeeping.png";
-import customers from "../public/images/customers.png";
-import invoice from "../public/images/invoice.png";
-import send from "../public/images/send.png";
+//import bookkeeping from "../../public/images/bookkeeping.png";
+import customers from "../../public/images/customers.png";
+import invoice from "../../public/images/invoice.png";
+import send from "../../public/images/send.png";
 const bannar = [
   {
     image: "📱",

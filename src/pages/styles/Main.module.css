@@ -1,0 +1,10 @@
+.mainSection{
+    top: 100%;
+   margin-top: 7rem;
+}
+@media (max-width: 768px) {
+    .mainSection{
+        margin-top: 2rem;
+        padding: .5rem;
+    }
+}

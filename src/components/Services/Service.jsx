@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+
 import styles from "./Service.module.css";
+import PropTypes from "prop-types";
 
 function Service({ image, text, title, id }) {
   return (
@@ -19,5 +20,12 @@ function Service({ image, text, title, id }) {
     </div>
   );
 }
+
+Service.propTypes = {
+  image: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  id: PropTypes.string
+};
 
 export default Service;

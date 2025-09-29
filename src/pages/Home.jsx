@@ -1,9 +1,13 @@
-import React from "react";
+//import React from "react";
 import ButtonCustom from "../components/ButtonCustom";
 import styles from "./styles/Home.module.css";
-import mobileappPic from "/images/file.png";
+//import mobileappPic from "/images/file.png";
+import mobileappPic from "/images/aboutinvogo.png";
 import bannar from "../data/data";
 import BannerItem from "../components/Home/BannerItem";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// --- Add this line for the specific icon ---
+import { faThumbsUp } from "@fortawesome/free-solid-svg-icons"
 
 function Home() {
   return (
@@ -13,7 +17,7 @@ function Home() {
       <div id="home" className={styles.HomeWrapper}>
         <div className={styles.HomeContainer}>
           <div className={styles.TextContainer}>
-          {/*   
+            {/*   
             <span className={styles.ConstructionBanner}>
               <h3 className={styles.blink}>
                 This website is under construction
@@ -38,11 +42,7 @@ function Home() {
           </div>
           <div className={styles.ImageContainer}>
             <span className={styles.marketing2}>
-            
-            
-              <img
-                src="https://img.icons8.com/?size=100&id=QMLc3m7lIG14&format=png&color=228BE6"
-                alt="thumbs up"
+              <FontAwesomeIcon icon={faThumbsUp} className={styles.bounceIcon}
               />
               100% Client Driven
             </span>
@@ -59,6 +59,8 @@ function Home() {
             <BannerItem text={item.message} image={item.image} key={item.key} />
           ))}
         </div>
+
+
       </div>
     </>
   );

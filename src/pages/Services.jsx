@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import styles from "./styles/Services.module.css";
 import { services } from "../data/data";
 import Service from "../components/Services/Service";

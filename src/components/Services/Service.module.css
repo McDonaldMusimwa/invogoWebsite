@@ -7,3 +7,10 @@
     text-align: center;
     margin: 1rem;
 }
+@media (max-width: 768px) {
+    .ServiceCard{
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+}

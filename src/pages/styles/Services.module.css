@@ -1,0 +1,63 @@
+/* Services.module.css */
+
+.ServicesContainer {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 5rem 0 5rem 0;
+  scroll-margin-top: 5rem;
+}
+
+.lineContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 5rem 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #000; /* Black color for the line */
+}
+
+.ServicesText {
+  padding: 0 10px; /* Space between the text and the lines */
+  text-align: center;
+  white-space: nowrap;
+  font-size: 2.2em; /* Adjust as needed */
+  color: #333; /* Adjust color as needed */
+}
+
+.ServicesTextCustom {
+  font-weight: bold;
+  color: #007BFF; /* Example of custom color for "Our Services" */
+}
+
+.ServiceGrid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 5%;
+  padding: 5px;
+  align-content: center;
+  margin: 0 0 2rem 0;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .ServiceGrid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 1rem;
+  }
+
+  .ServicesText {
+    font-size: 1rem; /* Slightly smaller text */
+  }
+
+  .lineContainer {
+    margin: 2rem 0; /* Reduce spacing */
+  }
+}
+  
