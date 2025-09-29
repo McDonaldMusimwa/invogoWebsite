@@ -107,6 +107,8 @@
     flex-direction: column; /* Stack images vertically */
     border: none; /* Remove border ring for mobile */
     gap: 1rem;
+    border: none;
+    background: none;
   }
 
   .image {
